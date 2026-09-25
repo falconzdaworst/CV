@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a1114" />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      name="description"
+      content="Portfolio của Nguyễn Hoàng Anh — sinh viên An toàn thông tin tại Đại học CMC, định hướng SOC Analyst. Kinh nghiệm, dự án AIOps, kỹ năng và CV."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Nguyễn Hoàng Anh · Information Security"
+    />
+    <meta
+      property="og:description"
+      content="Từ dữ liệu đến góc nhìn bảo mật. Khám phá kinh nghiệm, dự án và định hướng SOC Analyst của Nguyễn Hoàng Anh."
+    />
+    <title>Nguyễn Hoàng Anh · Information Security</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Đến nội dung chính</a>
+    <svg
+      class="icon-defs"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <defs>
+        <symbol id="i-arrow" viewBox="0 0 24 24">
+          <path d="M5 12h14m-6-6 6 6-6 6" />
+        </symbol>
+        <symbol id="i-up" viewBox="0 0 24 24">
+          <path d="M6 18 18 6M6 6h12v12" />
+        </symbol>
+        <symbol id="i-download" viewBox="0 0 24 24">
+          <path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5" />
+        </symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24">
+          <path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" />
+          <circle cx="12" cy="10" r="2.5" />
+        </symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24">
+          <rect x="3" y="5" width="18" height="14" rx="2" />
+          <path d="m3 6 9 7 9-7" />
+        </symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24">
+          <path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6zM8 12l3 3 5-6" />
+        </symbol>
+        <symbol id="i-code" viewBox="0 0 24 24">
+          <path d="m8 6-6 6 6 6m8-12 6 6-6 6M14 3l-4 18" />
+        </symbol>
+        <symbol id="i-network" viewBox="0 0 24 24">
+          <rect x="8" y="2" width="8" height="6" rx="1" />
+          <rect x="2" y="16" width="7" height="6" rx="1" />
+          <rect x="15" y="16" width="7" height="6" rx="1" />
+          <path d="M12 8v4M5.5 16v-4h13v4" />
+        </symbol>
+        <symbol id="i-ai" viewBox="0 0 24 24">
+          <path d="m12 2 3 7 7 3-7 3-3 7-3-7-7-3 7-3z" />
+        </symbol>
+        <symbol id="i-plus" viewBox="0 0 24 24">
+          <path d="M12 5v14M5 12h14" />
+        </symbol>
+      </defs>
+    </svg>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Nguyễn Hoàng Anh — Home"
+          ><span class="brand-mark">N<span>.</span></span
+          ><span
+            >HOÀNG ANH<span class="brand-sub">INFORMATION SECURITY</span></span
+          ></a
+        >
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#about" data-i18n="nav.about">Giới thiệu</a>
+          <a href="#experience" data-i18n="nav.experience">Kinh nghiệm</a>
+          <a href="#projects" data-i18n="nav.projects">Dự án</a>
+          <a href="#skills" data-i18n="nav.skills">Kỹ năng</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="language-toggle"
+            type="button"
+            aria-label="Switch to English"
+          >
+            <span class="lang-vi active">VI</span
+            ><span class="lang-divider">/</span><span class="lang-en">EN</span>
+          </button>
+          <a class="header-contact" href="#contact"
+            ><span data-i18n="nav.contact">Liên hệ</span
+            ><svg class="icon"><use href="#i-up" /></svg
+          ></a>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+            aria-label="Mở menu"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <nav
+        id="mobile-nav"
+        class="mobile-nav"
+        aria-label="Mobile navigation"
+        hidden
+      >
+        <a href="#about" data-i18n="nav.about">Giới thiệu</a
+        ><a href="#experience" data-i18n="nav.experience">Kinh nghiệm</a
+        ><a href="#projects" data-i18n="nav.projects">Dự án</a
+        ><a href="#skills" data-i18n="nav.skills">Kỹ năng</a
+        ><a href="#contact" data-i18n="nav.contact">Liên hệ</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero container" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot"></span
+            ><span data-i18n="hero.eyebrow">ĐỊNH HƯỚNG · SOC ANALYST</span>
+          </p>
+          <p class="hello" data-i18n="hero.hello">Xin chào, tôi là</p>
+          <h1>
+            Nguyễn<br /><span>Hoàng Anh<span class="name-period">.</span></span>
+          </h1>
+          <p class="hero-description" data-i18n="hero.description">
+            Tôi theo đuổi an toàn thông tin, kết nối phân tích log, giám sát hệ
+            thống và AI để hiểu rõ hơn những gì đang diễn ra phía sau dữ liệu.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects"
+              ><span data-i18n="hero.projects">Khám phá dự án</span
+              ><svg class="icon"><use href="#i-arrow" /></svg></a
+            ><a
+              class="button button-outline"
+              href="assets/Nguyen-Hoang-Anh-CV.pdf"
+              download
+              ><span data-i18n="download">Tải CV</span
+              ><svg class="icon"><use href="#i-download" /></svg
+            ></a>
+          </div>
+          <div class="hero-meta">
+            <span
+              ><svg class="icon"><use href="#i-pin" /></svg
+              ><span data-i18n="hero.location">Đống Đa, Việt Nam</span></span
+            ><span class="meta-divider"></span
+            ><span data-i18n="hero.university">Sinh viên Đại học CMC</span>
+          </div>
+        </div>
+        <div
+          class="hero-visual"
+          role="group"
+          aria-label="Log, analysis and human-led response architecture"
+        >
+          <div class="visual-top">
+            <span class="mono">SECURITY, WITH CONTEXT.</span
+            ><svg class="icon"><use href="#i-shield" /></svg>
+          </div>
+          <div class="radar" aria-hidden="true">
+            <div class="radar-ring ring-one"></div>
+            <div class="radar-ring ring-two"></div>
+            <div class="radar-ring ring-three"></div>
+            <div class="radar-cross horizontal"></div>
+            <div class="radar-cross vertical"></div>
+            <div class="radar-sweep"></div>
+            <div class="radar-center">
+              <svg><use href="#i-shield" /></svg>
+            </div>
+            <span class="radar-node node-one"></span
+            ><span class="radar-node node-two"></span
+            ><span class="radar-node node-three"></span
+            ><span class="radar-label label-one">LOGS</span
+            ><span class="radar-label label-two">SIGNALS</span
+            ><span class="radar-label label-three">CONTEXT</span>
+          </div>
+          <div class="visual-caption">
+            <span class="mono">LOG → INSIGHT → ACTION</span>
+            <h2 data-i18n="visual.title">
+              Nhìn sâu vào dữ liệu.<br />Hiểu đúng hệ thống.
+            </h2>
+          </div>
+          <div class="visual-bottom">
+            <span
+              ><i></i
+              ><span data-i18n="visual.bottom"
+                >Con người ở trung tâm quyết định</span
+              ></span
+            ><span class="mono">01 — 03</span>
+          </div>
+          <div class="floating-note">
+            <span class="note-icon"
+              ><svg class="icon"><use href="#i-ai" /></svg
+            ></span>
+            <div>
+              <strong>AIOps × Security</strong
+              ><span data-i18n="visual.note"
+                >Điểm giao giữa AI và vận hành</span
+              >
+            </div>
+            <svg class="icon"><use href="#i-up" /></svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-strip" id="about">
+        <div class="container about-inner">
+          <div class="about-intro">
+            <span class="section-kicker" data-i18n="about.kicker"
+              >MỘT CHÚT VỀ TÔI</span
+            >
+            <p data-i18n="about.description">
+              Học từ nền tảng.<br />Trưởng thành qua thực hành.
+            </p>
+          </div>
+          <div class="about-stat">
+            <strong>01<span> /</span></strong
+            ><span data-i18n="about.internship">Kỳ thực tập chuyên môn</span>
+          </div>
+          <div class="about-stat">
+            <strong>04<span> /</span></strong
+            ><span data-i18n="about.projects">Dự án học thuật</span>
+          </div>
+          <div class="about-stat">
+            <strong>B2<span> /</span></strong
+            ><span data-i18n="about.english">Trình độ tiếng Anh</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container experience" id="experience">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">
+              <span>01 /</span
+              ><span data-i18n="experience.kicker">KINH NGHIỆM</span>
+            </p>
+            <h2 data-i18n="experience.title">Từ kiến thức<br />đến thực tế.</h2>
+          </div>
+          <p class="section-description" data-i18n="experience.description">
+            Tiếp cận các bài toán bảo mật, kiến trúc phần mềm và dữ liệu trong
+            môi trường doanh nghiệp.
+          </p>
+        </div>
+        <div class="experience-layout">
+          <aside class="timeline-meta">
+            <span class="timeline-dot"></span>
+            <p class="mono">09.2025 — 02.2026</p>
+            <span class="small-tag" data-i18n="experience.tag">THỰC TẬP</span>
+          </aside>
+          <article class="experience-content">
+            <div class="company-heading">
+              <div>
+                <h3>CMC Cyber Security</h3>
+                <p data-i18n="experience.role">Thực tập sinh</p>
+              </div>
+              <span class="company-icon"
+                ><svg class="icon"><use href="#i-shield" /></svg
+              ></span>
+            </div>
+            <div class="experience-grid">
+              <div>
+                <span class="item-number mono">01</span>
+                <h4>PKI & SSL/TLS</h4>
+                <p data-i18n="experience.pki">
+                  Nghiên cứu chữ ký số, chứng thư X.509 và nguyên lý vận hành
+                  SSL/TLS trong hệ thống PKI.
+                </p>
+              </div>
+              <div>
+                <span class="item-number mono">02</span>
+                <h4 data-i18n="experience.javaTitle">
+                  Kiến trúc ứng dụng Java
+                </h4>
+                <p data-i18n="experience.java">
+                  Áp dụng Design Patterns, thiết kế HLD/LLD, xây dựng base code
+                  và phát triển các module tính năng.
+                </p>
+              </div>
+              <div>
+                <span class="item-number mono">03</span>
+                <h4>Cyber Threat Intelligence</h4>
+                <p data-i18n="experience.stix">
+                  Nghiên cứu và mô hình hóa dữ liệu chia sẻ mối đe dọa theo tiêu
+                  chuẩn STIX 2.
+                </p>
+              </div>
+              <div>
+                <span class="item-number mono">04</span>
+                <h4 data-i18n="experience.dataTitle">
+                  Phân tích & thiết kế dữ liệu
+                </h4>
+                <p data-i18n="experience.data">
+                  Phân tích yêu cầu, xây dựng tài liệu kỹ thuật và thiết kế mô
+                  hình cơ sở dữ liệu quan hệ.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects">
+        <div class="container section">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">
+                <span>02 /</span
+                ><span data-i18n="projects.kicker">DỰ ÁN TIÊU BIỂU</span>
+              </p>
+              <h2 data-i18n="projects.title">Học bằng cách xây dựng.</h2>
+            </div>
+            <span class="project-count mono" data-i18n="projects.count"
+              >04 DỰ ÁN / 2026 PORTFOLIO</span
+            >
+          </div>
+          <div class="project-grid">
+            <article class="project-card project-featured">
+              <div class="project-art aiops-art" aria-hidden="true">
+                <div class="art-meta mono">
+                  <span>OBSERVABILITY → INTELLIGENCE</span
+                  ><span>01 / AIOPS</span>
+                </div>
+                <div class="pipeline">
+                  <div class="pipeline-node">
+                    <svg class="icon"><use href="#i-network" /></svg
+                    ><strong>Collect</strong><span>Vector + Elasticsearch</span>
+                  </div>
+                  <span class="pipeline-link"></span>
+                  <div class="pipeline-node node-highlight">
+                    <svg class="icon"><use href="#i-ai" /></svg
+                    ><strong>Analyze</strong><span>Qwen2.5</span>
+                  </div>
+                  <span class="pipeline-link"></span>
+                  <div class="pipeline-node">
+                    <svg class="icon"><use href="#i-shield" /></svg
+                    ><strong>Review</strong><span>Human-in-the-loop</span>
+                  </div>
+                </div>
+                <div class="art-bottom mono">
+                  Prometheus / Grafana <span>LOG-DRIVEN RECOVERY</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-label">
+                  <span data-i18n="projects.thesis">ĐỀ ÁN TỐT NGHIỆP</span
+                  ><span class="featured-label" data-i18n="projects.featured"
+                    >NỔI BẬT</span
+                  >
+                </div>
+                <h3 data-i18n="projects.aiopsTitle">
+                  AIOps · Giám sát & tự phục hồi
+                </h3>
+                <p data-i18n="projects.aiopsDescription">
+                  Kết hợp log và LLM để chẩn đoán sự cố, đề xuất kịch bản phục
+                  hồi với sự kiểm soát của con người.
+                </p>
+                <div class="tags">
+                  <span>Elasticsearch</span><span>Qwen2.5</span
+                  ><span>Grafana</span><span>Vector</span>
+                </div>
+                <details>
+                  <summary>
+                    <span data-i18n="projects.details">Chi tiết dự án</span
+                    ><svg class="icon"><use href="#i-plus" /></svg>
+                  </summary>
+                  <div class="project-details">
+                    <p data-i18n="projects.aiopsDetails">
+                      Xây dựng pipeline thu thập log tập trung qua Vector vào
+                      Elasticsearch, kết hợp Prometheus/Grafana để giám sát hạ
+                      tầng. Ứng dụng Qwen2.5 phân tích log và đề xuất kịch bản
+                      phục hồi an toàn theo mô hình Human-in-the-Loop.
+                    </p>
+                  </div>
+                </details>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art fruit-art" aria-hidden="true">
+                <div class="art-meta mono">
+                  <span>COMPUTER VISION</span><span>02 / DL</span>
+                </div>
+                <div class="fruit-scene">
+                  <div class="fruit-box">
+                    <span class="detection-label mono">FRUIT RECOGNITION</span
+                    ><svg viewBox="0 0 200 150">
+                      <path
+                        d="M103 44c-9-25 7-37 24-34-1 19-11 26-24 34"
+                        fill="#497044"
+                      />
+                      <path
+                        d="M101 47c-4-17-8-22-15-26"
+                        fill="none"
+                        stroke="#6d563f"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M100 51c-35-23-71 1-69 34 2 32 29 56 44 53 15-3 26-3 41 0 21 3 48-31 48-58 0-31-35-51-64-29"
+                        fill="#df8d55"
+                      />
+                      <path
+                        d="M53 78c2-11 8-17 18-18"
+                        fill="none"
+                        stroke="#f5cba3"
+                        stroke-width="5"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="art-bottom mono">
+                  <span>IMAGE → CLASSIFICATION</span><span>DEEP LEARNING</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-label">
+                  <span data-i18n="projects.coursework">DỰ ÁN HỌC PHẦN</span>
+                </div>
+                <h3>Deep Learning · Fruit Recognition</h3>
+                <p data-i18n="projects.fruitDescription">
+                  Nhận diện chủng loại và độ tươi của hoa quả từ hình ảnh bằng
+                  Computer Vision và Deep Learning.
+                </p>
+                <div class="tags">
+                  <span>Computer Vision</span><span>Deep Learning</span>
+                </div>
+                <details>
+                  <summary>
+                    <span data-i18n="projects.details">Chi tiết dự án</span
+                    ><svg class="icon"><use href="#i-plus" /></svg>
+                  </summary>
+                  <div class="project-details">
+                    <p data-i18n="projects.fruitDetails">
+                      Xây dựng mô hình thị giác máy tính để phân loại hoa quả và
+                      nhận diện độ tươi từ dữ liệu hình ảnh.
+                    </p>
+                  </div>
+                </details>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art cinema-art" aria-hidden="true">
+                <div class="art-meta mono">
+                  <span>BACKEND ENGINEERING</span><span>03 / WEB</span>
+                </div>
+                <div class="cinema-scene">
+                  <div class="cinema-screen"></div>
+                  <div class="cinema-seats">
+                    <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i
+                    ><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i
+                    ><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+                  </div>
+                </div>
+                <div class="art-bottom mono">
+                  <span>CINEMA / BOOKING SYSTEM</span><span>RESTFUL API</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-label">
+                  <span data-i18n="projects.coursework">DỰ ÁN HỌC PHẦN</span>
+                </div>
+                <h3 data-i18n="projects.cinemaTitle">
+                  Cinema · Website đặt vé xem phim
+                </h3>
+                <p data-i18n="projects.cinemaDescription">
+                  Phát triển backend, thiết kế cơ sở dữ liệu và xây dựng RESTful
+                  API cho ứng dụng đặt vé xem phim.
+                </p>
+                <div class="tags">
+                  <span>Backend</span><span>RESTful API</span
+                  ><span>Database Design</span>
+                </div>
+                <details>
+                  <summary>
+                    <span data-i18n="projects.details">Chi tiết dự án</span
+                    ><svg class="icon"><use href="#i-plus" /></svg>
+                  </summary>
+                  <div class="project-details">
+                    <p data-i18n="projects.cinemaDetails">
+                      Tập trung vào hệ thống backend, cấu trúc dữ liệu và các
+                      API đáp ứng yêu cầu bảo mật của ứng dụng.
+                    </p>
+                  </div>
+                </details>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art game-art" aria-hidden="true">
+                <div class="art-meta mono">
+                  <span>MOBILE DEVELOPMENT</span><span>04 / GAME</span>
+                </div>
+                <div class="match-board">
+                  <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i
+                  ><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i
+                  ><i></i><i></i><i></i>
+                </div>
+                <div class="art-bottom mono">
+                  <span>MATCH THREE. MAKE A MOVE.</span><span>FLUTTER</span>
+                </div>
+              </div>
+              <div class="project-body">
+                <div class="project-label">
+                  <span data-i18n="projects.coursework">DỰ ÁN HỌC PHẦN</span>
+                </div>
+                <h3 data-i18n="projects.matchTitle">
+                  Match3 · Trò chơi di động
+                </h3>
+                <p data-i18n="projects.matchDescription">
+                  Tham gia kiểm thử, phát hiện và sửa lỗi, triển khai trò chơi
+                  Flutter trên thiết bị di động.
+                </p>
+                <div class="tags">
+                  <span>Flutter</span><span>Quality Assurance</span
+                  ><span>Mobile</span>
+                </div>
+                <details>
+                  <summary>
+                    <span data-i18n="projects.details">Chi tiết dự án</span
+                    ><svg class="icon"><use href="#i-plus" /></svg>
+                  </summary>
+                  <div class="project-details">
+                    <p data-i18n="projects.matchDetails">
+                      Đảm nhiệm kiểm thử phần mềm (QA), phát hiện và sửa lỗi ứng
+                      dụng; triển khai thành công sản phẩm trên thiết bị di
+                      động.
+                    </p>
+                  </div>
+                </details>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container skills-section" id="skills">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">
+              <span>03 /</span
+              ><span data-i18n="skills.kicker">KỸ NĂNG & NỀN TẢNG</span>
+            </p>
+            <h2 data-i18n="skills.title">Bộ công cụ của tôi.</h2>
+          </div>
+          <p class="section-description" data-i18n="skills.description">
+            Nền tảng kỹ thuật được tích lũy qua học tập, nghiên cứu và thực hành
+            dự án.
+          </p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <svg class="icon"><use href="#i-code" /></svg>
+            <h3 data-i18n="skills.programming">Lập trình & dữ liệu</h3>
+            <div class="tags">
+              <span>C</span><span>C#</span><span>Java</span><span>Python</span
+              ><span>SQL Server</span>
+            </div>
+          </article>
+          <article class="skill-card">
+            <svg class="icon"><use href="#i-network" /></svg>
+            <h3 data-i18n="skills.systems">Hệ thống & mạng</h3>
+            <div class="tags">
+              <span>Linux</span><span>Windows</span><span>TCP/IP</span
+              ><span>Network Fundamentals</span>
+            </div>
+          </article>
+          <article class="skill-card">
+            <svg class="icon"><use href="#i-shield" /></svg>
+            <h3 data-i18n="skills.security">An ninh mạng</h3>
+            <div class="tags">
+              <span>STIX 2</span><span>PKI</span><span>Digital Signature</span
+              ><span data-i18n="skills.tls">SSL/TLS cơ bản</span>
+            </div>
+          </article>
+          <article class="skill-card">
+            <svg class="icon"><use href="#i-ai" /></svg>
+            <h3 data-i18n="skills.projectTools">Công nghệ trong dự án</h3>
+            <div class="tags">
+              <span>Elasticsearch</span><span>Vector</span
+              ><span>Prometheus</span><span>Grafana</span><span>Qwen2.5</span>
+            </div>
+          </article>
+        </div>
+        <div class="education-grid">
+          <article class="education-card">
+            <span class="section-kicker" data-i18n="education.kicker"
+              >HỌC VẤN</span
+            >
+            <h3 data-i18n="education.school">Đại học CMC</h3>
+            <p data-i18n="education.major">Chuyên ngành An toàn thông tin</p>
+            <div class="education-bottom">
+              <span class="gpa">GPA <strong>3.03</strong></span
+              ><span class="small-tag" data-i18n="education.english"
+                >TIẾNG ANH · B2</span
+              >
+            </div>
+          </article>
+          <article class="certificate-card">
+            <span class="certificate-icon"
+              ><svg class="icon"><use href="#i-shield" /></svg
+            ></span>
+            <div>
+              <span class="section-kicker" data-i18n="certificate.kicker"
+                >CHỨNG CHỈ CHUYÊN MÔN</span
+              >
+              <h3>Google Cybersecurity<br />Professional Certificate</h3>
+              <p>Coursera <span>·</span> 2026</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="container contact-inner">
+          <div>
+            <p class="section-kicker">
+              <span>04 /</span><span data-i18n="contact.kicker">KẾT NỐI</span>
+            </p>
+            <h2 data-i18n="contact.title">
+              Bắt đầu một<br />cuộc trò chuyện<span>?</span>
+            </h2>
+            <p class="contact-description" data-i18n="contact.description">
+              Tôi mong muốn tìm kiếm cơ hội Thực tập sinh / Junior SOC Analyst,
+              học hỏi từ đội ngũ và đóng góp vào các bài toán bảo mật thực tế.
+            </p>
+            <a
+              class="button button-light"
+              href="mailto:nguyenhoanganh291@gmail.com"
+              ><span data-i18n="contact.emailAction">Gửi email cho tôi</span
+              ><svg class="icon"><use href="#i-up" /></svg
+            ></a>
+          </div>
+          <div class="contact-details">
+            <a href="mailto:nguyenhoanganh291@gmail.com"
+              ><span class="contact-label">EMAIL</span
+              ><span class="contact-value"
+                >nguyenhoanganh291@gmail.com<svg class="icon">
+                  <use href="#i-up" /></svg></span></a
+            ><a href="tel:+84966299538"
+              ><span class="contact-label" data-i18n="contact.phone"
+                >ĐIỆN THOẠI</span
+              ><span class="contact-value"
+                >0966 299 538<svg class="icon"><use href="#i-up" /></svg></span
+            ></a>
+            <div>
+              <span class="contact-label" data-i18n="contact.location"
+                >ĐỊA ĐIỂM</span
+              ><span class="contact-value" data-i18n="hero.location"
+                >Đống Đa, Việt Nam</span
+              >
+            </div>
+            <a class="contact-cv" href="assets/Nguyen-Hoang-Anh-CV.pdf" download
+              ><svg class="icon"><use href="#i-download" /></svg
+              ><span data-i18n="contact.cv">Tải bản CV đầy đủ</span
+              ><span class="mono">PDF</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="footer-name" href="#home">NGUYỄN HOÀNG ANH<span>.</span></a
+        ><span class="footer-copyright"
+          >© <span id="year">2026</span>
+          <span data-i18n="footer.label">Portfolio cá nhân</span></span
+        ><a class="back-top" href="#home"
+          ><span data-i18n="footer.top">Về đầu trang</span
+          ><svg class="icon"><use href="#i-up" /></svg
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
